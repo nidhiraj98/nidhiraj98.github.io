@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href = './resources/style.css' type = 'text/css' rel = 'stylesheet'>
+          <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Architects Daughter">
+        <meta name ="viewport" content="width=device-width, initial-scale = 1">
+    </head>
+    <body>
+        <div class= "menu-bar">
+            <div class = "calculator">Calculator</div>
+            <ul id = "menu">
+               <li id = "normal" onclick = "tab(this)">Normal Mode</li>
+               <li id = "matrix" onclick = "tab(this)">Matrix</li>
+               <li id = "graph" onclick = "tab(this)">Graph Plotter</li>
+               <li id = "equations" onclick = "tab(this)">Equations</li>
+            </ul>
+        </div>
+        <div class = "container" id = "norm-container">
+            <div class = "result">
+                <input type = "text" id = "current">
+                <div class = "history" id = "history"></div>   
+            </div>
+            <div class = "keypad">
+                <div class = "input_values"></div>
+                <div class = "operators1">
+                    <button class = "button_xy" value = "allClear" onclick="allClear(this)">AC</button>
+                    <button class = "button" value = "log10">log<sub>10</sub>x</button>
+                    <button class = "button_xy" value = "logxy">log<sub>y</sub>x</button>
+                    <button class = "button" value = "powe">e<sup>x</sup></button>
+                    <button class = "button" value = "pow10">10<sup>x</sup></button>
+                    <button class = "button_xy" value = powxy>x<sup>y</sup></button>
+                    <button class = "button" value = "rootx2"><span>&#8730;</span>x</button>
+                    <button class = "button" value = "rootx3"><span>&#8731;</span>x</button>
+                </div>
+                <div class = "bottom">
+                    <div class = "numbers">
+                        <button class = "button" value = "7" onclick="display(this)">7</button>
+                        <button class = "button" value = "8" onclick="display(this)">8</button>
+                        <button class = "button" value = "9" onclick="display(this)">9</button>
+                        <button class = "button" value = "4" onclick="display(this)">4</button>
+                        <button class = "button" value = "5" onclick="display(this)">5</button>
+                        <button class = "button" value = "6" onclick="display(this)">6</button>
+                        <button class = "button" value = "1" onclick="display(this)">1</button>
+                        <button class = "button" value = "2" onclick="display(this)">2</button>
+                        <button class = "button" value = "3" onclick="display(this)">3</button>
+                        <button class = "button" value = "0" onclick="display(this)">0</button>
+                        <button class = "button" value = "." onclick="display(this)">.</button>
+                        <button class = "button_xy" value = "ans" onclick="display(this)">Ans</button>
+                    </div>
+                    <div class = "operators2">
+                        <button class = "button" value = "+" onclick="display(this)"><span>&#43;</span></button>
+                        <button class = "button" value = "-" onclick="display(this)"><span>&#8722;</span></button>
+                        <button class = "button" value = "*" onclick="display(this)"><span>&#215;</span></button>
+                        <button class = "button" value = "/" onclick="display(this)"><span>&#247;</span></button>
+                        <button class = "button" value = "res" onclick="display(this)"><span>&#61;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container" id = "matr-container">
+            <div class = "result"></div>
+            <div class = "keypad"></div>
+        </div>
+        <div class = "container" id = "grap-container">
+            <div class = "result"></div>
+            <div class = "keypad"></div>
+        </div>
+        <div class = "container" id = "equa-container">
+            <div class = "result"></div>
+            <div class = "keypad"></div>
+        </div>
+        <script src = './script.js'></script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    margin-top: 5%;
+    background-image: url(./typing-speed/resources/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li{
+    font-size: 22px;
+    font-family: 'Architects Daughter';
+    font-weight: 400px;
+    color: white;
+}
+a{
+    color: white;
+}
